@@ -1,0 +1,26 @@
+.container-forcast {
+	height: 100vh;
+}
+.dailyweather-title {
+	opacity: 0;
+}
+.dailyweather-title.open {
+	height: 30vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 1;
+}
+.get-weather {
+	font-size: 1.6rem;
+	color: #fff;
+	text-shadow: 1px 3px rgba(50, 50, 70, 0.5);
+	font-weight: 700;
+	cursor: pointer;
+	padding: 40px 0 0 10px;
+	transition: 0.3s ease;
+}
+
+.get-weather:hover {
+	color: #005780;
+}

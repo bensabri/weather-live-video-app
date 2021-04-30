@@ -1,0 +1,23 @@
+.date-container {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	font-size: 1.7rem;
+	color: #fff;
+	text-shadow: 1px 3px rgba(50, 50, 70, 0.5);
+	font-weight: 600;
+	height: 15rem;
+	padding-left: 15px;
+}
+.location {
+	font-size: 1.6rem;
+	color: #fff;
+	text-shadow: 1px 3px rgba(50, 50, 70, 0.5);
+	font-weight: 700;
+}
+.location p {
+	font-size: 1.2rem;
+}
+.date-class {
+	font-size: clamp(0.8em, 2vw, 2em);
+}

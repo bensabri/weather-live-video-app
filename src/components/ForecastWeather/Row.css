@@ -1,0 +1,170 @@
+:root {
+	--row-text-color: rgb(41, 41, 41);
+	--top-btn-slider: 190px;
+}
+
+.row {
+	margin-right: 15px;
+}
+.row-container {
+	display: flex;
+	align-items: flex-start;
+	position: relative;
+	overflow: hidden;
+	overflow-x: visible;
+	width: 100%;
+	padding: 20px;
+	transition: opacity 400ms ease-in;
+}
+
+.row {
+	background-color: rgba(255, 255, 255, 0.5);
+	box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+	margin: 50px 10px 0 0;
+	padding: 20px 20px 10px 20px;
+	min-width: 12rem;
+	border-radius: 10px;
+	transition: transform ease-in-out 250ms;
+	height: 17.5rem;
+	overflow: hidden;
+	position: relative;
+}
+.row:hover {
+	transform: scale(1.05);
+}
+.date-row {
+	text-decoration: underline;
+}
+.showmore {
+	margin-left: 140px;
+}
+.description-row {
+	padding-bottom: 5px;
+	color: var(--row-text-color);
+}
+.temp-container-row {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding-bottom: 5px;
+	color: var(--row-text-color);
+}
+.wind-container-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-bottom: 5px;
+	color: var(--row-text-color);
+}
+.more-rowDetail {
+	padding-bottom: 5px;
+	color: var(--row-text-color);
+	transform: translateY(100%);
+	transition: transform 250ms ease-in;
+	background-color: rgb(235, 235, 235);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding-left: 15px;
+}
+.more-rowDetail.open {
+	transform: translateY(0%);
+	background-color: rgb(235, 235, 235);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding-left: 15px;
+}
+@media screen and (max-width: 1000px) {
+	.row {
+		transform: scale(0.97);
+		margin: 50px 5px 0 0;
+	}
+	.row:hover {
+		transform: scale(1);
+	}
+}
+@media screen and (max-width: 700px) {
+	.row {
+		transform: scale(0.9);
+		margin: -5px;
+	}
+	.row:hover {
+		transform: scale(0.94);
+	}
+}
+@media screen and (max-width: 600px) {
+	.row {
+		transform: scale(0.85);
+		margin: -10px;
+	}
+	.row:hover {
+		transform: scale(0.89);
+	}
+}
+/*.clear-sky {
+	background-image: url(./../../images/icon/clear-sky.png);
+	background-size: 55px 55px;
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 60px;
+}
+.few-clouds {
+	background-image: url(./../../images/icon/few\ clouds.png);
+	background-size: 55px 55px;
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 60px;
+}
+.scattered-clouds {
+	background-image: url(./../../images/icon/scattered\ clouds.png);
+	background-size: 65px 65px;
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 60px;
+}
+.broken-clouds {
+	background-image: url(./../../images/icon/broken\ clouds.png);
+	background-size: 65px 65px;
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 60px;
+}
+.rain {
+	background-image: url(./../../images/icon/rain.png);
+	background-size: 65px 65px;
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 60px;
+}
+.shower-rain {
+	background-image: url(./../../images/icon/shower\ rain.png);
+	background-size: 65px 65px;
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 60px;
+}
+.thunderstorm {
+	background-image: url(./../../images/icon/thunderstorm.png);
+	background-size: 65px 65px;
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 60px;
+}
+.snow {
+	background-image: url(./../../images/icon/snow.png);
+	background-size: 65px 65px;
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 60px;
+}
+.mist {
+	background-image: url(./../../images/icon/mist.png);
+	background-size: 65px 65px;
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 60px;
+}
+*/

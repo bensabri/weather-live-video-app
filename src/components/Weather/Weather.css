@@ -1,0 +1,91 @@
+#night {
+	background-image: url(./../../images/night.png);
+	transition: background-image 500ms ease-in-out;
+}
+.app.sunny {
+	background-image: url(./../../images/sunny.png);
+	transition: background-image 750ms ease-in-out;
+}
+.app.cloudy {
+	background-image: url(./../../images/cloudy.png);
+	transition: background-image 750ms ease-in-out;
+}
+.app.rain {
+	background-image: url(./../../images/rain.jpg);
+	transition: background-image 750ms ease-in-out;
+}
+.weather-container-fade {
+	opacity: 0;
+
+	transition: opacity 500ms ease-in;
+}
+.weather-container-fade.open {
+	opacity: 1;
+}
+
+.app.sunny.night,
+.app.cloudy.night,
+.app.rain.night {
+	background-image: url(./../../images/night.png);
+}
+.weather-container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: row;
+}
+.temp,
+.weather,
+.latitude,
+.wind {
+	color: white;
+	text-shadow: 3px 3px rgba(50, 50, 70, 0.8);
+}
+.temp {
+	font-size: 10vh;
+}
+.weather {
+	font-size: 4rem;
+}
+.latitude {
+	font-size: 1.2rem;
+}
+.wind {
+	font-size: 2rem;
+}
+li {
+	font-size: 1rem;
+}
+
+.wind-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 200px;
+	color: white;
+	font-size: 3rem;
+	text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+.ChevronDown {
+	cursor: pointer;
+	color: white;
+}
+@media screen and (max-width: 930px) {
+	.temp {
+		font-size: 8vh;
+	}
+	.weather {
+		font-size: 3rem;
+	}
+	.wind {
+		font-size: 1.5rem;
+	}
+	.app {
+		margin-right: 30px;
+	}
+}
+@media screen and (max-width: 650px) {
+	.weather-container {
+		flex-direction: column;
+	}
+}
